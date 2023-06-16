@@ -1,9 +1,16 @@
 @import url(./header.css);
 @import url(./cards.css);
+@import url(./textos.css);
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+:root{
+    --prymary-color: #F44D27;
+    --white: #FFFFFF;
 }
 
 body{

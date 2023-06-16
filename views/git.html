@@ -10,25 +10,53 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;800&display=swap" rel="stylesheet">
 
     <!-- Link Css -->
-    <link rel="stylesheet" href="./styles/globals.css">
+    <link rel="stylesheet" href="../styles/globals.css">
 
     <!-- Fav Icon -->
-    <link rel="shortcut icon" href="./images/icons/githubFavIcon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/icons/githubFavIcon.png" type="image/x-icon">
     <!-- Link metadata -->
     <meta name="description" content="Git con Github">
     <meta name="description" content="¿Qué es Git?">
     <meta name="description" content="¿Qué es GitHub?">
+    <!-- link a font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Git con Github</title>
 </head>
 
 <body>
     <header>
         <div>
-            <img src="./images/icons/gitIcon.png" alt="Git icono">
-
+            <img src="../images/icons/gitIcon.png" alt="Git icono">
         </div>
         <h1>Git</h1>
+        <article class="info-card">
+            <a href="../index.html">
+                <img src="../images/icons/gitIcon.png" />
+                <h2>Git</h2>
+                <img src="../images/icons/gitIcon.png" />
+            </a>
+        </article>
     </header>
+    <main>
+        <section class="textContent">
+            <article class="title">
+                <h2><i class="fa-brands fa-git-alt"></i>Title<i class="fa-brands fa-git-alt"></i></h2>
+            </article>
+            <article class="content">
+                <p>Git es un <span class="important">sistema de control de versiones</span> distribuido y ampliamente utilizado. Se utiliza para rastrear cambios en archivos y coordinar el trabajo en proyectos de <span class="important">desarrollo de software</span>. A diferencia de los sistemas de control de versiones centralizados, Git almacena una copia completa del <span class="important">repositorio</span> en cada clon local, lo que permite a los desarrolladores <span class="important">trabajar de forma independiente</span> y luego <span class="important">fusionar sus cambios de manera eficiente</span>.</p>
+                <p><i class="fa-brands fa-git-alt"></i>Estas son algunas características clave de Git:<i class="fa-brands fa-git-alt"></i></p>
+                <p>1. Repositorio: Un repositorio Git es un almacén de todos los archivos y directorios, así como el historial de cambios asociado. Puede ser local o remoto, y múltiples colaboradores pueden trabajar en un repositorio al mismo tiempo.</p>
+                <p>2. Ramas (Branches): Git permite la creación de ramas, que son copias virtuales del repositorio que permiten a los desarrolladores trabajar en nuevas funcionalidades o solucionar problemas sin afectar la rama principal (también conocida como "rama maestra" o "rama principal").</p>
+                <p>3. Commits: Un commit representa un punto en el tiempo en el historial de cambios del repositorio. Contiene una descripción de los cambios realizados y puede incluir uno o más archivos modificados. Los commits se utilizan para rastrear y revertir cambios, y proporcionan un registro claro de la evolución del proyecto.</p>
+                <p>4. Fusiones (Merges): Cuando se completa el trabajo en una rama y se desea incorporar esos cambios a otra rama (por ejemplo, fusionar una rama de características con la rama principal), se realiza una fusión. Git intenta combinar automáticamente los cambios, pero si hay conflictos, los desarrolladores deben resolverlos manualmente.</p>
+                <p>5. Repositorios remotos: Git facilita la colaboración al permitir la clonación de repositorios remotos. Esto significa que varios desarrolladores pueden trabajar en un proyecto y compartir sus cambios a través de un repositorio centralizado o mediante repositorios remotos distribuidos, como GitHub o GitLab.</p>
+                <p>En resumen, Git es una herramienta esencial en el desarrollo de software moderno, ya que proporciona un flujo de trabajo eficiente para rastrear y coordinar cambios en los archivos de un proyecto, permitiendo una colaboración efectiva y el seguimiento de la evolución del código a lo largo del tiempo.</p>
+            </article>
+        </section>
+        
+    </main>
 
 </body>
 

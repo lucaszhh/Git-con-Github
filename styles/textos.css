@@ -1,0 +1,29 @@
+span.important{
+    color: var(--prymary-color);
+    font-weight: bold;
+}
+
+section.textContent article.title{
+    background-color: var(--prymary-color);
+    padding: 20px;
+}
+
+section.textContent article.title h2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--white);
+}
+
+section.textContent article.title i{
+    font-size: calc(2em + 1vw);
+}
+
+section.textContent article.content{
+    padding: 20px 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
