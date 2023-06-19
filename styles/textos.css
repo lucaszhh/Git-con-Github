@@ -41,6 +41,10 @@ section.textContent article.content{
     }
 }
 
+section.textContent article.content a:hover{
+    text-decoration: underline;
+}
+
 section.textContent article.content h2.subtitle{
     background-color: var(--prymary-color);
     width: 100%;

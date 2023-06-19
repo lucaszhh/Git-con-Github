@@ -1,13 +1,19 @@
 section.containerPpt{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px 20%;
+    gap: 20px;
 }
 
 section.containerPpt iframe{
     width: 100%;
     height: 500px;
+}
+
+section.containerPpt h2 span a:hover{
+    text-decoration: underline;
 }
 
 @media (max-width : 700px) {

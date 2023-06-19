@@ -28,9 +28,6 @@ a{
     animation-duration: 1s;
 }
 
-a:hover{
-    text-decoration: underline;
-}
 
 h1{
     font-size: calc(1em + 1vw)
