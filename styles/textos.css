@@ -3,12 +3,19 @@ span.important{
     font-weight: bold;
 }
 
+.quote{
+    border: 1px var(--prymary-color) solid;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
 section.textContent article.title{
     background-color: var(--prymary-color);
     padding: 20px;
 }
 
-section.textContent article.title h2{
+section.textContent article.title h1{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,6 +31,21 @@ section.textContent article.content{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
+}
+
+@media (max-width : 700px) {
+    section.textContent article.content{
+        padding: 10px 5%;
+    }
+}
+
+section.textContent article.content h2.subtitle{
+    background-color: var(--prymary-color);
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    color: var(--white);
 }

@@ -1,6 +1,7 @@
 @import url(./header.css);
 @import url(./cards.css);
 @import url(./textos.css);
+@import url(./ppt.css);
 
 *{
     padding: 0;
@@ -24,6 +25,11 @@ ul{
 a{
     text-decoration: none;
     color: unset;
+    animation-duration: 1s;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 h1{
@@ -36,4 +42,11 @@ h2{
 
 p{
     font-size: calc(0.6em + 1vw)
+}
+
+span.code{
+    background-color: var(--prymary-color);
+    padding: 2px 20px;
+    color: var(--white);
+    font-weight: 800;
 }
