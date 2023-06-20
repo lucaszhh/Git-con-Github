@@ -31,7 +31,7 @@ const header = () => {
         <a href="../index.html">
             <img src="../images/icons/gitIcon.png" />
             <h2>Inicio</h2>
-            <img src="../images/icons/gitHubIcon.png" />
+            <img src="../images/icons/githubIcon.png" />
         </a>
     </article>
     `
