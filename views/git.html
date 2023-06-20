@@ -4,40 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <!-- Link a Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;800&display=swap" rel="stylesheet">
 
-    <!-- Link Css -->
-    <link rel="stylesheet" href="../styles/globals.css">
-
     <!-- Fav Icon -->
     <link rel="shortcut icon" href="../images/icons/githubFavIcon.png" type="image/x-icon">
+    
+    <!-- Link Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Link metadata -->
     <meta name="description" content="Git con Github">
     <meta name="description" content="¿Qué es Git?">
     <meta name="description" content="¿Qué es GitHub?">
-    <!-- link a font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link Css -->
+    <link rel="stylesheet" href="../styles/globals.css">
     <title>Git con Github</title>
 </head>
 
 <body>
     <header>
-        <div>
-            <img src="../images/icons/gitIcon.png" alt="Git icono">
-        </div>
+        <div class="headerView"></div>
         <h1>Git</h1>
-        <article class="info-card">
-            <a href="../index.html">
-                <img src="../images/icons/gitIcon.png" />
-                <h2>Git</h2>
-                <img src="../images/icons/gitIcon.png" />
-            </a>
-        </article>
     </header>
     <main>
         <section class="textContent">
@@ -103,7 +97,18 @@
         </section>
         <section class="containerPpt">
             <iframe src="https://onedrive.live.com/embed?resid=33202127C68C9DD6%21135&amp;authkey=!ALA2F6S-PQTqA7w&amp;em=2&amp;wdAr=1.7777777777777777&amp;wdEaaCheck=1"  frameborder="0"></iframe>
-            <h2><span class="important"><a href="../archivos/guiaInstalacionGit.pdf" download="Guía de instalación Git Bash!" class="textUnderline">Descargar guía de instalación Git Bash!</a></span></h2>
+            <h2 style="text-align: center;"><span class="important"><a href="../archivos/guiaInstalacionGit.pdf" download="Guía de instalación Git Bash!" class="download">Descargar guía de instalación Git Bash!</a></span></h2>
+        </section>
+
+        <section class="information">
+            <h2>Continua en:</h2>
+            <article class="info-card">
+                <a href="./github.html">
+                    <img src="../images/icons/githubIcon.png" />
+                    <h2>GitHub</h2>
+                    <img src="../images/icons/githubIcon.png" />
+                </a>
+            </article>
         </section>
 
 
@@ -111,6 +116,7 @@
 
     <footer></footer>
 </body>
-<script src="../scripts/footer.js"></script>
+<script src="../scripts/headerFooter.js"></script>
+<script src="../scripts/script.js"></script>
 
 </html>

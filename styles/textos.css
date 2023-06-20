@@ -3,10 +3,16 @@ span.important{
     font-weight: bold;
 }
 
+span.importantGitHub{
+    color: var(--dark-github);
+    font-weight: bold;
+}
+
 .quote{
     border: 1px var(--prymary-color) solid;
     padding: 20px;
     border-radius: 5px;
+    text-align: center;
 }
 
 .title{
@@ -18,16 +24,17 @@ span.important{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 10px;
     color: var(--white);
+    text-align: center;
 }
 
-.textUnderline:hover{
+.download:hover{
     text-decoration: underline;
 }
 
-
-section.textContent article.title i{
-    font-size: calc(2em + 1vw);
+.titleText i{
+    font-size: calc(1em + 1vw);
 }
 
 section.textContent article.content{
@@ -45,9 +52,7 @@ section.textContent article.content{
     }
 }
 
-
-
-section.textContent article.content h2.subtitle{
+.subtitle{
     background-color: var(--prymary-color);
     width: 100%;
     padding: 20px;

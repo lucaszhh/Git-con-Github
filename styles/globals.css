@@ -15,8 +15,13 @@
     --dark-github: #000000;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Montserrat', sans-serif, Arial, Helvetica;
+
 }
 
 ul{
@@ -42,7 +47,7 @@ p{
     font-size: calc(0.6em + 1vw)
 }
 
-span.code{
+.code{
     background-color: var(--prymary-color);
     padding: 2px 20px;
     color: var(--white);
@@ -52,4 +57,15 @@ span.code{
 .github{
     background-color: var(--dark-github);
     color: var(--white);
+}
+
+.arrowUp{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    font-size: 40px;
+    cursor: pointer;
+    text-shadow: var(--white) 1px 1px 3px , var(--white) -1px -1px 3px ;
+    background-color: var(--white);
+    border-radius: 50%;
 }

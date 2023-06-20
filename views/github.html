@@ -4,38 +4,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Link a Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;800&display=swap" rel="stylesheet">
 
-    <!-- Link Css -->
-    <link rel="stylesheet" href="../styles/globals.css">
-
     <!-- Fav Icon -->
     <link rel="shortcut icon" href="../images/icons/githubFavIcon.png" type="image/x-icon">
+
+    <!-- Link Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Link metadata -->
     <meta name="description" content="Git con Github">
     <meta name="description" content="¿Qué es Git?">
     <meta name="description" content="¿Qué es GitHub?">
+
+    <!-- Link Css -->
+    <link rel="stylesheet" href="../styles/globals.css">
     <title>Git con Github</title>
 </head>
 
 <body>
     <header>
-        <div>
-            <img src="../images/icons/githubIcon.png" alt="GitHub icono"/>
-        </div>
+        <div class="headerView"></div>
         <h1>GitHub</h1>
-        <article class="info-card">
-            <a href="../index.html">
-                <img src="../images/icons/githubIcon.png" alt="GitHub icono"/>
-                <h2>GitHub</h2>
-                <img src="../images/icons/githubIcon.png" alt="GitHub icono"/>
-            </a>
-        </article>
     </header>
-
+    <main>
+        <section class="textContent">
+            <article class="title github">
+                <h1 class="titleText"><i class="fa-brands fa-github"></i>¿Qué es GitHub?<i
+                        class="fa-brands fa-github"></i></h1>
+            </article>
+            <article class="content">
+                <p><span class="importantGitHub">GitHub</span> es un sitio web en donde podemos <span
+                        class="importantGitHub">almacenar</span> los <span class="importantGitHub">archivos</span> y
+                    <span class="importantGitHub">proyectos</span> de
+                    programación de manera <span class="importantGitHub">gratuita</span>. Para poder hacer uso de sus
+                    beneficios solo hace
+                    falta <a class="download" target="_blank" href="https://github.com/signup?source=login"><span
+                            class="importantGitHub">crearse una cuenta</span></a> en la plataforma.</p>
+                <p>
+                    <span class="importantGitHub">GitHub</span> permite a los desarrolladores trabajar juntos en
+                    proyectos de software, ya sea de manera individual o en equipos, facilitando la <span
+                        class="importantGitHub">colaboración</span>, la <span class="importantGitHub">revisión de
+                        código</span> y el <span class="importantGitHub">seguimiento de cambios</span>. Permite a los
+                    desarrolladores alojar repositorios de código, realizar seguimiento de problemas y solicitudes de
+                    características, así como administrar y colaborar en <span class="importantGitHub">proyectos de
+                        software de código abierto</span>.
+                </p>
+            </article>
+        </section>
+        <section class="textContent">
+            <article class="title github">
+                <h1 class="titleText"><i class="fa-brands fa-github"></i>¿Qué es un repositorio?<i
+                        class="fa-brands fa-github"></i></h1>
+            </article>
+            <article class="content">
+                <p>Es el lugar donde se irán <span class="importantGitHub">almacenando</span> los <span
+                        class="importantGitHub">archivos</span> de nuestro proyecto. En GitHub
+                    podemos tener la cantidad de proyectos que queramos, en donde a <span class="importantGitHub">cada
+                        proyecto</span> le
+                    corresponderá <span class="importantGitHub">un repositorio</span>.</p>
+                <h2 class="subtitle github">
+                    Tipos de repositorios:
+                </h2>
+                <p>
+                    Los repositorios que se alojan en GitHub los llamamos repositorios <span class="importantGitHub">remotos</span>, mientras
+                    que a los que se alojan en nuestra PC los llamamos repositorios <span class="importantGitHub">locales</span>. Es necesario
+                    crear un <span class="importantGitHub">vínculo</span> entre ambos para poder mantener <span class="importantGitHub">actualizados</span> los archivos locales
+                    que están conectados a ese repositorio en la nube.
+                </p>
+                <h2 class="subtitle github">
+                    Crear un repositorio remoto: (GitHub)
+                </h2>
+                <p>
+                    <span class="importantGitHub"><i class="fa-brands fa-github"></i></span>Una vez iniciada la sesión en GitHub, hacer clic en el ícono <span class="importantGitHub">+</span> sobre la barra
+                    principal y elegir la opción <span class="importantGitHub">New repository</span>.
+                </p>
+                <p>
+                    <span class="importantGitHub"><i class="fa-brands fa-github"></i></span>Veremos en pantalla un formulario.
+                </p>
+                <p>
+                    <span class="importantGitHub"><i class="fa-brands fa-github"></i></span>Completar únicamente el nombre que le queremos dar a nuestro repositorio.
+                    Podemos nombrarlo como queramos, pero debe ser un nombre que no hayamos usado para otro repositorio.
+                </p>
+                <p>
+                    <span class="importantGitHub"><i class="fa-brands fa-github"></i></span>Ir hacia abajo de todo y apretar el botón <span class="importantGitHub">Create Repository</span>.
+                </p>
+                <h2 class="subtitle github">
+                    Crear un repositorio local: (PC)
+                </h2>
+                <p>
+                    <span class="importantGitHub"><i class="fa-brands fa-github"></i></span>Crear una carpeta en nuestra PC que será donde alojaremos nuestro proyecto. Esta
+                    carpeta será nuestro <span class="importantGitHub">repositorio local</span>.
+                </p>
+                <p>
+                    <span class="importantGitHub"><i class="fa-brands fa-github"></i></span>Dentro de la carpeta, abrir una terminal y correr el comando <span class="code github">git init</span> .
+                </p>
+                <p>
+                    <span class="importantGitHub"><i class="fa-brands fa-github"></i></span>Este comando <span class="importantGitHub">inicializa</span> un <span class="importantGitHub">repositorio local</span> en la carpeta del proyecto.
+                </p>
+            </article>
+        </section>
+        <section class="information">
+            <h2>Continua en:</h2>
+            <article class="info-card">
+                <a href="./git-con-github.html">
+                    <img src="../images/icons/gitIcon.png" />
+                    <h2>Git con GitHub</h2>
+                    <img src="../images/icons/githubIcon.png" />
+                </a>
+            </article>
+        </section>
+    </main>
+    <footer></footer>
 </body>
+<script src="../scripts/headerFooter.js"></script>
+<script src="../scripts/script.js"></script>
 
 </html>
