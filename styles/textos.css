@@ -9,18 +9,22 @@ span.important{
     border-radius: 5px;
 }
 
-
-section.textContent article.title{
+.title{
     background-color: var(--prymary-color);
     padding: 20px;
 }
 
-section.textContent article.title h1{
+.titleText{
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: var(--white);
 }
+
+.textUnderline:hover{
+    text-decoration: underline;
+}
+
 
 section.textContent article.title i{
     font-size: calc(2em + 1vw);
@@ -41,9 +45,7 @@ section.textContent article.content{
     }
 }
 
-section.textContent article.content a:hover{
-    text-decoration: underline;
-}
+
 
 section.textContent article.content h2.subtitle{
     background-color: var(--prymary-color);

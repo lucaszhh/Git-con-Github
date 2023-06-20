@@ -1,4 +1,4 @@
-@import url(./header.css);
+@import url(./headerFooter.css);
 @import url(./cards.css);
 @import url(./textos.css);
 @import url(./ppt.css);
@@ -12,6 +12,7 @@
 :root{
     --prymary-color: #F44D27;
     --white: #FFFFFF;
+    --dark-github: #000000;
 }
 
 body{
@@ -46,4 +47,9 @@ span.code{
     padding: 2px 20px;
     color: var(--white);
     font-weight: 800;
+}
+
+.github{
+    background-color: var(--dark-github);
+    color: var(--white);
 }
