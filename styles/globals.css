@@ -2,6 +2,7 @@
 @import url(./cards.css);
 @import url(./textos.css);
 @import url(./ppt.css);
+@import url(./code.css);
 
 *{
     padding: 0;
