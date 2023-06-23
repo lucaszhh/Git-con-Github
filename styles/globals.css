@@ -11,9 +11,10 @@
 }
 
 :root{
-    --prymary-color: #F44D27;
+    --primary-color: #F44D27;
     --white: #FFFFFF;
     --dark-github: #000000;
+    --console: #4b4b4b;
 }
 
 html {
@@ -48,12 +49,7 @@ p{
     font-size: calc(0.6em + 1vw)
 }
 
-.code{
-    background-color: var(--prymary-color);
-    padding: 2px 20px;
-    color: var(--white);
-    font-weight: 800;
-}
+
 
 .github{
     background-color: var(--dark-github);

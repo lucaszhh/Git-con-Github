@@ -1,17 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
-.caja {
-    border: 1px solid black;
-    padding: 10px;
-    background-color: lightgray;
+.code {
+    border: 1px solid var(--primary-color);
+    color: var(--white);
+    background-color: var(--console);
     font-family: 'Inconsolata', monospace;
+    display: flex;
+    align-items: stretch;
+    width: 100%;
 }
-  
+
+.codeButton{
+    width: 50px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.codeText{
+    padding: 20px 10px;
+}
+
+
 button {
-    padding: 5px 10px;
-    background-color: gray;
-    color: white;
+    color: var(--white);
+    background-color: unset;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
 }
