@@ -37,7 +37,7 @@ header span, header h1{
 /* footer */
 footer{
     margin-top: 100px;
-    background-color: var(--prymary-color);
+    background-color: var(--primary-color);
     text-align: center;
 }
 

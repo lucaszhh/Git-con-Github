@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+.code {
+    border: 1px solid var(--primary-color);
+    color: var(--white);
+    background-color: var(--console);
+    font-family: 'Inconsolata', monospace;
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.codeButton{
+    width: 50px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.codeText{
+    padding: 20px 10px;
+}
+
+
+button {
+    color: var(--white);
+    background-color: unset;
+    border: none;
+    cursor: pointer;
+}

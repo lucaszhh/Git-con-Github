@@ -4,4 +4,6 @@ const arrowUp = () => {
     `
 };
 
+const copyContent = (text) => navigator.clipboard.writeText(text);
+
 arrowUp();

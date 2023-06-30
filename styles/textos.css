@@ -1,5 +1,5 @@
 span.important{
-    color: var(--prymary-color);
+    color: var(--primary-color);
     font-weight: bold;
 }
 
@@ -9,14 +9,14 @@ span.importantGitHub{
 }
 
 .quote{
-    border: 1px var(--prymary-color) solid;
+    border: 1px var(--primary-color) solid;
     padding: 20px;
     border-radius: 5px;
     text-align: center;
 }
 
 .title{
-    background-color: var(--prymary-color);
+    background-color: var(--primary-color);
     padding: 20px;
 }
 
@@ -53,7 +53,7 @@ section.textContent article.content{
 }
 
 .subtitle{
-    background-color: var(--prymary-color);
+    background-color: var(--primary-color);
     width: 100%;
     padding: 20px;
     text-align: center;

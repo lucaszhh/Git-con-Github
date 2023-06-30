@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Link a Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,11 +12,11 @@
 
     <!-- Fav Icon -->
     <link rel="shortcut icon" href="../images/icons/githubFavIcon.png" type="image/x-icon">
-    
+
     <!-- Link Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Link metadata -->
     <meta name="description" content="Git con Github">
@@ -33,9 +33,74 @@
         <div class="headerView"></div>
         <h1>Git con GitHub</h1>
     </header>
-    <main></main>
+    <main>
+
+        <section class="textContent">
+            <article class="title">
+                <h1 class="titleText">
+                    <i class="fa-brands fa-git-alt"></i>
+                    Como usar Git con GitHub
+                    <i class="fa-brands fa-github"></i>
+                </h1>
+            </article>
+            <article class="content">
+                <h2 class="subtitle github">
+                    Comandos paso a paso para crear un repositorio local y vincularlo con uno remoto
+                </h2>
+                <p>Para utilizar <span class="important">Git</span> con <span class="importantGitHub">Github</span>, es
+                    necesario seguir algunos pasos. Primero, debes <span class="importantGitHub">configurar</span> tu
+                    <span class="important">nombre</span> y <span class="important">correo electrónico</span> en Git
+                    utilizando los siguientes comandos:
+                </p>
+                <section class="code">
+                    <article class="codeButton">
+                        <button title="Copiar texto" onclick='copyContent("git config --global user.name")'><i
+                                class="fa-solid fa-copy fa-bounce"></i></button>
+                    </article>
+                    <article class="codeText">
+                        <p id="texto">git config --global user.name [Tu nombre]</p>
+                    </article>
+                </section>
+                <section class="code">
+                    <article class="codeButton">
+                        <button title="Copiar texto" onclick='copyContent("git config --global user.email")'><i
+                                class="fa-solid fa-copy fa-bounce"></i></button>
+                    </article>
+                    <article class="codeText">
+                        <p id="texto">git config --global user.email [Tu correo electrónico]</p>
+                    </article>
+                </section>
+                <p>Luego, debes crear un <span class="importantGitHub">repositorio local</span> en tu computadora utilizando el comando:</p>
+                <section class="code">
+                    <article class="codeButton">
+                        <button title="Copiar texto" onclick='copyContent("git init")'><i
+                                class="fa-solid fa-copy fa-bounce"></i></button>
+                    </article>
+                    <article class="codeText">
+                        <p id="texto">git init</p>
+                    </article>
+                </section>
+                <p>Luego, debes <span class="importantGitHub">vincular</span> tu <span class="important">repositorio local</span> con un <span class="importantGitHub">repositorio remoto</span> en Github utilizando el comando:</p>
+                <section class="code">
+                    <article class="codeButton">
+                        <button title="Copiar texto" onclick='copyContent("git remote add origin")'><i
+                                class="fa-solid fa-copy fa-bounce"></i></button>
+                    </article>
+                    <article class="codeText">
+                        <p id="texto">git remote add origin [URL del repositorio remoto]</p>
+                    </article>
+                </section>
+                <h2 class="subtitle github">
+                    Comandos paso a paso para subir o actualizar cambios en el repositorio remoto
+                </h2>
+            </article>
+        </section>
+
+
+    </main>
     <footer></footer>
 </body>
 <script src="../scripts/headerFooter.js"></script>
 <script src="../scripts/script.js"></script>
+
 </html>
