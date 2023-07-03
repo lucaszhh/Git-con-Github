@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Link a Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,11 +12,11 @@
 
     <!-- Fav Icon -->
     <link rel="shortcut icon" href="../images/icons/githubFavIcon.png" type="image/x-icon">
-    
+
     <!-- Link Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Link metadata -->
     <meta name="description" content="Git con Github">
@@ -36,7 +36,8 @@
     <main>
         <section class="textContent">
             <article class="title">
-                <h1 class="titleText"><i class="fa-brands fa-git-alt"></i>¿Qué es Git?<i class="fa-brands fa-git-alt"></i></h1>
+                <h1 class="titleText"><i class="fa-brands fa-git-alt"></i>¿Qué es Git?<i
+                        class="fa-brands fa-git-alt"></i></h1>
             </article>
             <article class="content">
                 <p>Git es un <span class="important">sistema de control de versiones</span> distribuido y ampliamente
@@ -45,7 +46,8 @@
                     versiones centralizados, Git almacena una copia completa del <span
                         class="important">repositorio</span> en cada clon local, lo que permite a los desarrolladores
                     <span class="important">trabajar de forma independiente</span> y luego <span
-                        class="important">fusionar sus cambios de manera eficiente</span>.</p>
+                        class="important">fusionar sus cambios de manera eficiente</span>.
+                </p>
                 <h2 class="subtitle">
                     Estas son algunas características clave de Git:
                 </h2>
@@ -63,7 +65,8 @@
                     <span class="important">punto en el tiempo</span> en el historial de cambios del repositorio.
                     Contiene una <span class="important">descripción de los cambios realizados</span> y puede incluir
                     uno o más archivos modificados. Los commits se utilizan para rastrear y revertir cambios, y <span
-                        class="important">proporcionan un registro</span> claro de la evolución del proyecto.</p>
+                        class="important">proporcionan un registro</span> claro de la evolución del proyecto.
+                </p>
                 <p><span class="important"><i class="fa-brands fa-git-alt"></i> Fusiones (Merges):</span> Cuando se
                     completa el trabajo en una rama y se desea incorporar esos cambios a otra rama (por ejemplo, <span
                         class="important">fusionar una rama de características con la rama principal</span>), se realiza
@@ -78,26 +81,67 @@
                         class="important">desarrollo de software moderno</span>, ya que proporciona un <span
                         class="important">flujo de trabajo eficiente</span> para rastrear y coordinar cambios en los
                     archivos de un proyecto, permitiendo una <span class="important">colaboración efectiva</span> y el
-                    <span class="important">seguimiento de la evolución del código a lo largo del tiempo.</span></p>
+                    <span class="important">seguimiento de la evolución del código a lo largo del tiempo.</span>
+                </p>
             </article>
         </section>
 
         <section class="textContent">
             <article class="title">
-                <h1 class="titleText"><i class="fa-brands fa-git-alt"></i>Instalación de Git<i class="fa-brands fa-git-alt"></i></h1>
+                <h1 class="titleText"><i class="fa-brands fa-git-alt"></i>Instalación de Git<i
+                        class="fa-brands fa-git-alt"></i></h1>
             </article>
             <article class="content">
-                <p><span class="important"><i class="fa-brands fa-git-alt"></i></span> Ir a la <span class="important"><a href="https://git-scm.com/" target="_blank">web oficial</a></span>  y descargar el ejecutable.</p>
-                <p><span class="important"><i class="fa-brands fa-git-alt"></i></span> Ejecutar el archivo que descargamos.</p>
-                <p><span class="important"><i class="fa-brands fa-git-alt"></i></span> Si el sistema operativo es Windows, además de instalarse Git, se instalará en nuestra máquina una terminal llamada <span class="important">Git Bash.</span></p>
-                <p><span class="important"><i class="fa-brands fa-git-alt"></i></span> Una vez instalado Git, estará disponible el comando <span class="code">git</span>  para correr en la terminal.</p>
-                <p><span class="important"><i class="fa-brands fa-git-alt"></i></span> Para verificar que la instalación se haya realizado correctamente, abrir una terminal y correr el comando <span class="code">git --version . f</span> </p>
-
+                <p><span class="important"><i class="fa-brands fa-git-alt"></i></span> Ir a la <span
+                        class="important"><a href="https://git-scm.com/" target="_blank">web oficial</a></span> y
+                    descargar el ejecutable.</p>
+                <p><span class="important"><i class="fa-brands fa-git-alt"></i></span> Ejecutar el archivo que
+                    descargamos.</p>
+                <p><span class="important"><i class="fa-brands fa-git-alt"></i></span> Si el sistema operativo es
+                    Windows, además de instalarse Git, se instalará en nuestra máquina una terminal llamada <span
+                        class="important">Git Bash.</span></p>
+                <p><span class="important"><i class="fa-brands fa-git-alt"></i></span> Una vez instalado Git, estará
+                    disponible el comando para correr en la terminal.</p>
+                <section class="code">
+                    <article class="codeButton">
+                        <button title="Copiar texto" onclick='copyContent("git")'><i
+                                class="fa-solid fa-copy fa-bounce"></i></button>
+                    </article>
+                    <article class="codeText">
+                        <p id="texto">git</p>
+                    </article>
+                </section>
+                <p><span class="important"><i class="fa-brands fa-git-alt"></i></span> Para verificar que la instalación
+                    se haya realizado correctamente, abrir una terminal y correr el comando </p>
+                <section class="code">
+                    <article class="codeButton">
+                        <button title="Copiar texto" onclick='copyContent("git --version")'><i
+                                class="fa-solid fa-copy fa-bounce"></i></button>
+                    </article>
+                    <article class="codeText">
+                        <p id="texto">git --version</p>
+                    </article>
+                </section>
             </article>
         </section>
         <section class="containerPpt">
-            <iframe src="https://onedrive.live.com/embed?resid=33202127C68C9DD6%21135&amp;authkey=!ALA2F6S-PQTqA7w&amp;em=2&amp;wdAr=1.7777777777777777&amp;wdEaaCheck=1"  frameborder="0"></iframe>
-            <h2 style="text-align: center;"><span class="important"><a href="../archivos/guiaInstalacionGit.pdf" download="Guía de instalación Git Bash!" class="download">Descargar guía de instalación Git Bash!</a></span></h2>
+            <iframe
+                src="https://onedrive.live.com/embed?resid=33202127C68C9DD6%21135&amp;authkey=!ALA2F6S-PQTqA7w&amp;em=2&amp;wdAr=1.7777777777777777&amp;wdEaaCheck=1"
+                frameborder="0"
+                class="guia"></iframe>
+            <h2 style="text-align: center;"><span class="important"><a href="../archivos/guiaInstalacionGit.pdf"
+                         class="download">Ver guía de instalación Git
+                        Bash!</a></span></h2>
+        </section>
+
+        <section class="containerPpt">
+            <h2 class="subtitle">
+                Guía de comandos de Git Bash!
+            </h2>
+            <img style="width: 200px ;" src="../images/icons/gitIcon.png" alt="icon git">
+            <h2 style="text-align: center;"><span class="important"><a href="../archivos/comandosBash.pdf"
+                         class="download">Ver guía de comandos de Git
+                        Bash!</a></span></h2>
         </section>
 
         <section class="information">

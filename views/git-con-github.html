@@ -48,7 +48,9 @@
                     Comandos paso a paso para crear un repositorio local y vincularlo con uno remoto
                 </h2>
                 <p>Para utilizar <span class="important">Git</span> con <span class="importantGitHub">Github</span>, es
-                    necesario seguir algunos pasos. Primero, debes <span class="importantGitHub">configurar</span> tu
+                    necesario seguir algunos pasos.</p>
+                <p><span class="important"><i class="fa-brands fa-git-alt"></i></span> Primero, debes <span
+                        class="importantGitHub">configurar</span> tu
                     <span class="important">nombre</span> y <span class="important">correo electrónico</span> en Git
                     utilizando los siguientes comandos:
                 </p>
@@ -70,7 +72,8 @@
                         <p id="texto">git config --global user.email [Tu correo electrónico]</p>
                     </article>
                 </section>
-                <p>Luego, debes crear un <span class="importantGitHub">repositorio local</span> en tu computadora utilizando el comando:</p>
+                <p><span class="important"><i class="fa-brands fa-git-alt"></i></span> Luego, debes crear un <span
+                        class="importantGitHub">repositorio local</span> en tu computadora utilizando el comando:</p>
                 <section class="code">
                     <article class="codeButton">
                         <button title="Copiar texto" onclick='copyContent("git init")'><i
@@ -80,7 +83,9 @@
                         <p id="texto">git init</p>
                     </article>
                 </section>
-                <p>Luego, debes <span class="importantGitHub">vincular</span> tu <span class="important">repositorio local</span> con un <span class="importantGitHub">repositorio remoto</span> en Github utilizando el comando:</p>
+                <p><span class="important"><i class="fa-brands fa-git-alt"></i></span> Luego, debes <span
+                        class="importantGitHub">vincular</span> tu <span class="important">repositorio local</span> con
+                    un <span class="importantGitHub">repositorio remoto</span> en Github utilizando el comando:</p>
                 <section class="code">
                     <article class="codeButton">
                         <button title="Copiar texto" onclick='copyContent("git remote add origin")'><i
@@ -93,10 +98,135 @@
                 <h2 class="subtitle github">
                     Comandos paso a paso para subir o actualizar cambios en el repositorio remoto
                 </h2>
+                <p>Para poder subir nuestros archivos a la nube, debemos seguir los siguientes pasos</p>
+                <p><span class="importantGitHub"><i class="fa-brands fa-github"></i></span> Abrir una terminal en la
+                    ubicación de nuestro repositorio local.</p>
+                <p><span class="importantGitHub"><i class="fa-brands fa-github"></i></span> Correr el comando </p>
+                <section class="code">
+                    <article class="codeButton">
+                        <button title="Copiar texto" onclick='copyContent("git status")'><i
+                                class="fa-solid fa-copy fa-bounce"></i></button>
+                    </article>
+                    <article class="codeText">
+                        <p id="texto">git status</p>
+                    </article>
+                </section>
+                <p>Para ver el <span class="importantGitHub">estado</span> de nuestros archivos (aquellos en rojo son
+                    los archivos que aún no están en
+                    seguimiento).</p>
+                <p><span class="importantGitHub"><i class="fa-brands fa-github"></i></span> Correr el comando </p>
+                <section class="code">
+                    <article class="codeButton">
+                        <button title="Copiar texto" onclick='copyContent("git add .")'><i
+                                class="fa-solid fa-copy fa-bounce"></i></button>
+                    </article>
+                    <article class="codeText">
+                        <p id="texto">git add .</p>
+                    </article>
+                </section>
+                <p>Para indicar que queremos <span class="importantGitHub">agregar todos</span> los archivos al
+                    repositorio. </p>
+                <p><span class="importantGitHub"><i class="fa-brands fa-github"></i></span> Para <span
+                        class="importantGitHub">agregar</span> un <span class="importantGitHub">solo archivo</span>,
+                    correr el comando</p>
+                <section class="code">
+                    <article class="codeButton">
+                        <button title="Copiar texto" onclick='copyContent("git add archivo.extension")'><i
+                                class="fa-solid fa-copy fa-bounce"></i></button>
+                    </article>
+                    <article class="codeText">
+                        <p id="texto">git add archivo.extension</p>
+                    </article>
+                </section>
+                <p>en donde deberemos indicar tanto el nombre como la extensión del archivo.</p>
+                <p><span class="importantGitHub"><i class="fa-brands fa-github"></i></span> Correr el comando </p>
+                <section class="code">
+                    <article class="codeButton">
+                        <button title="Copiar texto" onclick='copyContent("git status")'><i
+                                class="fa-solid fa-copy fa-bounce"></i></button>
+                    </article>
+                    <article class="codeText">
+                        <p id="texto">git status</p>
+                    </article>
+                </section>
+                <p>Para ver el <span class="importantGitHub">estado</span> de nuestros archivos (aquellos en verde son
+                    los archivos que serán agregados al repositorio, por lo tanto estarán en seguimiento). </p>
+                <p><span class="importantGitHub"><i class="fa-brands fa-github"></i></span> Para <span
+                        class="importantGitHub">confirmar</span> que queremos subir de manera definitiva aquellos
+                    archivos que agregamos, correr el comando</p>
+                <section class="code">
+                    <article class="codeButton">
+                        <button title="Copiar texto" onclick='copyContent("git commit -m ")'><i
+                                class="fa-solid fa-copy fa-bounce"></i></button>
+                    </article>
+                    <article class="codeText">
+                        <p id="texto">git commit -m "mensaje"</p>
+                    </article>
+                </section>
+                <p>En donde, entre comillas, deberemos escribir, en lo posible, un mensaje corto que resuma el trabajo
+                    que estamos subiendo. </p>
+                <p><span class="importantGitHub"><i class="fa-brands fa-github"></i></span> Para <span
+                        class="importantGitHub">enviar</span> los archivos al repositorio remoto correr el comando</p>
+                <section class="code">
+                    <article class="codeButton">
+                        <button title="Copiar texto" onclick='copyContent("git push origin master")'><i
+                                class="fa-solid fa-copy fa-bounce"></i></button>
+                    </article>
+                    <article class="codeText">
+                        <p id="texto">git push origin master</p>
+                    </article>
+                </section>
+                <h2 class="subtitle github">
+                    Actualizando archivos de un repositorio local
+                </h2>
+                <p><span class="importantGitHub"><i class="fa-brands fa-github"></i></span> Para poder actualizar los
+                    archivos de nuestro repositorio local con respecto a los que están en el repositorio remoto, debemos
+                    correr el comando</p>
+                <section class="code">
+                    <article class="codeButton">
+                        <button title="Copiar texto" onclick='copyContent("git pull origin master")'><i
+                                class="fa-solid fa-copy fa-bounce"></i></button>
+                    </article>
+                    <article class="codeText">
+                        <p id="texto">git pull origin master</p>
+                    </article>
+                </section>
+                <h2 class="subtitle github">
+                    Clonando archivos de un repositorio remoto
+                </h2>
+                <p>Para <span class="importantGitHub">descargar</span> por primera vez un repositorio remoto a nuestra
+                    máquina, tendremos que <span class="importantGitHub">clonarlo</span>. </p>
+                <p><span class="importantGitHub"><i class="fa-brands fa-github"></i></span> Abrir una terminal en la
+                    ubicación en donde queramos clonar el proyecto. </p>
+                <p><span class="importantGitHub"><i class="fa-brands fa-github"></i></span> Copiar la <span
+                        class="importantGitHub">URL</span> del repositorio que queremos clonar. </p>
+                <p><span class="importantGitHub"><i class="fa-brands fa-github"></i></span> Escribir el comando </p>
+                <section class="code">
+                    <article class="codeButton">
+                        <button title="Copiar texto" onclick='copyContent("git clone")'><i
+                                class="fa-solid fa-copy fa-bounce"></i></button>
+                    </article>
+                    <article class="codeText">
+                        <p id="texto">git clone</p>
+                    </article>
+                </section>
+                <p><span class="importantGitHub"><i class="fa-brands fa-github"></i></span> Pegar la <span
+                        class="importantGitHub">URL</span> después de la palabra <i>clone</i> (dejando un espacio de por
+                    medio) y presionar <i>enter</i>. </p>
+
             </article>
         </section>
-
-
+<!--         <section class="information">
+            <h2>Continua en:</h2>
+            <article class="info-card">
+                <a href="./actividades.html">
+                    <img src="../images/icons/gitIcon.png" />
+                    <h2>Actividades</h2>
+                    <img src="../images/icons/githubIcon.png" />
+                </a>
+            </article>
+        </section>
+ -->
     </main>
     <footer></footer>
 </body>
