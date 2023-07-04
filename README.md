@@ -1,2 +1,1 @@
-# Git-con-Github
-Se vienen cositas...
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=900&size=50&duration=2000&pause=1&color=F78900&background=000000&center=true&vCenter=true&multiline=true&width=2000&height=500&lines=Git+con+Github;Bienvenidx;Aprende+como+trabaja+Git+con+Github.+;Con+esta+gu%C3%ADa+aprender%C3%A1s+a+vincular+repositorios+locales+con+remotos;y+as%C3%AD+poder+trabajar+de+forma+colaborativa;teniendo+un+gestor+de+proyectos;y+un+controlador+de+versiones.)](https://git.io/typing-svg)
