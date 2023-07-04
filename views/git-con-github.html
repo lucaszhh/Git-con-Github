@@ -34,7 +34,7 @@
         <h1>Git con GitHub</h1>
     </header>
     <main>
-
+        
         <section class="textContent">
             <article class="title">
                 <h1 class="titleText">
@@ -45,14 +45,62 @@
             </article>
             <article class="content">
                 <h2 class="subtitle github">
-                    Comandos paso a paso para crear un repositorio local y vincularlo con uno remoto
+                    Clonando archivos de un repositorio remoto
+                </h2>
+                <p>Para <span class="importantGitHub">descargar</span> por primera vez un repositorio remoto a nuestra
+                    máquina, tendremos que <span class="importantGitHub">clonarlo</span>. </p>
+                <p><span class="importantGitHub"><i class="fa-brands fa-github"></i></span> Abrir una terminal en la
+                    ubicación en donde queramos clonar el proyecto. </p>
+                <p><span class="importantGitHub"><i class="fa-brands fa-github"></i></span> Copiar la <span
+                        class="importantGitHub">URL</span> del repositorio que queremos clonar. </p>
+                <p><span class="importantGitHub"><i class="fa-brands fa-github"></i></span> Escribir el comando </p>
+                <section class="code">
+                    <article class="codeButton">
+                        <button title="Copiar texto" onclick='copyContent("git clone")'><i
+                                class="fa-solid fa-copy fa-bounce"></i></button>
+                    </article>
+                    <article class="codeText">
+                        <p id="texto">git clone [URL]</p>
+                    </article>
+                </section>
+                <p><span class="importantGitHub"><i class="fa-brands fa-github"></i></span> Pegar la <span
+                        class="importantGitHub">URL</span> después de la palabra <i>clone</i> (dejando un espacio de por
+                    medio) y presionar <i>enter</i>. </p>
+                <h2 class="subtitle ">
+                    Comandos paso a paso para configurar un repositorio local
                 </h2>
                 <p>Para utilizar <span class="important">Git</span> con <span class="importantGitHub">Github</span>, es
                     necesario seguir algunos pasos.</p>
-                <p><span class="important"><i class="fa-brands fa-git-alt"></i></span> Primero, debes <span
+                <p class="quote" style="display: flex; flex-direction: column;  gap: 20px;"> 
+                    <span style="text-align: center;" class="important">¡ ATENCIÓN !</span> <span>Si no estas trabajando en tu computadora personal ya sea en la charla de <span class="important">Git con Github</span>  o en la computadora del trabajo debes tener mucho cuidado a la hora de <span class="important">dejar olvidadas tus credenciales</span>.<br> </span> <span> Debemos asegurarnos de <span class="important">reiniciar</span> las <span class="important">configuraciones globales</span></span>
+                </p>
+                <p ><span class="important"><i class="fa-brands fa-git-alt"></i></span> Primero, debes <span
                         class="importantGitHub">configurar</span> tu
                     <span class="important">nombre</span> y <span class="important">correo electrónico</span> en Git
                     utilizando los siguientes comandos:
+                </p>
+                <section class="code">
+                    <article class="codeButton">
+                        <button title="Copiar texto" onclick='copyContent("git config user.name")'><i
+                                class="fa-solid fa-copy fa-bounce"></i></button>
+                    </article>
+                    <article class="codeText">
+                        <p id="texto">git config user.name [Tu nombre]</p>
+                    </article>
+                </section>
+                <section class="code">
+                    <article class="codeButton">
+                        <button title="Copiar texto" onclick='copyContent("git config user.email")'><i
+                                class="fa-solid fa-copy fa-bounce"></i></button>
+                    </article>
+                    <article class="codeText">
+                        <p id="texto">git config user.email [Tu correo electrónico]</p>
+                    </article>
+                </section>
+                <p><span class="important"><i class="fa-brands fa-git-alt"></i></span> En caso de querer <span
+                    class="importantGitHub">configurar</span> tu
+                <span class="important">nombre</span> y <span class="important">correo electrónico</span> de manera <span class="important">global</span>  en Git
+                utilizando los siguientes comandos:
                 </p>
                 <section class="code">
                     <article class="codeButton">
@@ -70,17 +118,6 @@
                     </article>
                     <article class="codeText">
                         <p id="texto">git config --global user.email [Tu correo electrónico]</p>
-                    </article>
-                </section>
-                <p><span class="important"><i class="fa-brands fa-git-alt"></i></span> Luego, debes crear un <span
-                        class="importantGitHub">repositorio local</span> en tu computadora utilizando el comando:</p>
-                <section class="code">
-                    <article class="codeButton">
-                        <button title="Copiar texto" onclick='copyContent("git init")'><i
-                                class="fa-solid fa-copy fa-bounce"></i></button>
-                    </article>
-                    <article class="codeText">
-                        <p id="texto">git init</p>
                     </article>
                 </section>
                 <p><span class="important"><i class="fa-brands fa-git-alt"></i></span> Luego, debes <span
@@ -165,6 +202,21 @@
                 </section>
                 <p>En donde, entre comillas, deberemos escribir, en lo posible, un mensaje corto que resuma el trabajo
                     que estamos subiendo. </p>
+                    <h2 class="subtitle github">
+                        Actualizando archivos de un repositorio local
+                    </h2>
+                    <p><span class="importantGitHub"><i class="fa-brands fa-github"></i></span> Para poder actualizar los
+                        archivos de nuestro repositorio local con respecto a los que están en el repositorio remoto, debemos
+                        correr el comando</p>
+                    <section class="code">
+                        <article class="codeButton">
+                            <button title="Copiar texto" onclick='copyContent("git pull origin master")'><i
+                                    class="fa-solid fa-copy fa-bounce"></i></button>
+                        </article>
+                        <article class="codeText">
+                            <p id="texto">git pull origin master</p>
+                        </article>
+                    </section>
                 <p><span class="importantGitHub"><i class="fa-brands fa-github"></i></span> Para <span
                         class="importantGitHub">enviar</span> los archivos al repositorio remoto correr el comando</p>
                 <section class="code">
@@ -176,43 +228,6 @@
                         <p id="texto">git push origin master</p>
                     </article>
                 </section>
-                <h2 class="subtitle github">
-                    Actualizando archivos de un repositorio local
-                </h2>
-                <p><span class="importantGitHub"><i class="fa-brands fa-github"></i></span> Para poder actualizar los
-                    archivos de nuestro repositorio local con respecto a los que están en el repositorio remoto, debemos
-                    correr el comando</p>
-                <section class="code">
-                    <article class="codeButton">
-                        <button title="Copiar texto" onclick='copyContent("git pull origin master")'><i
-                                class="fa-solid fa-copy fa-bounce"></i></button>
-                    </article>
-                    <article class="codeText">
-                        <p id="texto">git pull origin master</p>
-                    </article>
-                </section>
-                <h2 class="subtitle github">
-                    Clonando archivos de un repositorio remoto
-                </h2>
-                <p>Para <span class="importantGitHub">descargar</span> por primera vez un repositorio remoto a nuestra
-                    máquina, tendremos que <span class="importantGitHub">clonarlo</span>. </p>
-                <p><span class="importantGitHub"><i class="fa-brands fa-github"></i></span> Abrir una terminal en la
-                    ubicación en donde queramos clonar el proyecto. </p>
-                <p><span class="importantGitHub"><i class="fa-brands fa-github"></i></span> Copiar la <span
-                        class="importantGitHub">URL</span> del repositorio que queremos clonar. </p>
-                <p><span class="importantGitHub"><i class="fa-brands fa-github"></i></span> Escribir el comando </p>
-                <section class="code">
-                    <article class="codeButton">
-                        <button title="Copiar texto" onclick='copyContent("git clone")'><i
-                                class="fa-solid fa-copy fa-bounce"></i></button>
-                    </article>
-                    <article class="codeText">
-                        <p id="texto">git clone</p>
-                    </article>
-                </section>
-                <p><span class="importantGitHub"><i class="fa-brands fa-github"></i></span> Pegar la <span
-                        class="importantGitHub">URL</span> después de la palabra <i>clone</i> (dejando un espacio de por
-                    medio) y presionar <i>enter</i>. </p>
 
             </article>
         </section>
