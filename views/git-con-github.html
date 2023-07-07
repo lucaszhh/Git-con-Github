@@ -74,7 +74,21 @@
                 <p class="quote" style="display: flex; flex-direction: column;  gap: 20px;"> 
                     <span style="text-align: center;" class="important">¡ ATENCIÓN !</span> <span>Si no estas trabajando en tu computadora personal ya sea en la charla de <span class="important">Git con Github</span>  o en la computadora del trabajo debes tener mucho cuidado a la hora de <span class="important">dejar olvidadas tus credenciales</span>.<br> </span> <span> Debemos asegurarnos de <span class="important">reiniciar</span> las <span class="important">configuraciones globales</span></span>
                 </p>
-                <p ><span class="important"><i class="fa-brands fa-git-alt"></i></span> Primero, debes <span
+                <p ><span class="important"><i class="fa-brands fa-git-alt"></i></span> Primero debes <span
+                        class="importantGitHub">verificar</span> si tu
+                    <span class="important">nombre</span> y <span class="important">correo electrónico</span> son los correctos en Git
+                    utilizando el siguiente comando:
+                </p>
+                <section class="code">
+                    <article class="codeButton">
+                        <button title="Copiar texto" onclick='copyContent("git config --list")'><i
+                                class="fa-solid fa-copy fa-bounce"></i></button>
+                    </article>
+                    <article class="codeText">
+                        <p id="texto">git config --list</p>
+                    </article>
+                </section>
+                <p ><span class="important"><i class="fa-brands fa-git-alt"></i></span> Si es que todavia no son los correctos debes <span
                         class="importantGitHub">configurar</span> tu
                     <span class="important">nombre</span> y <span class="important">correo electrónico</span> en Git
                     utilizando los siguientes comandos:
@@ -120,7 +134,7 @@
                         <p id="texto">git config --global user.email [Tu correo electrónico]</p>
                     </article>
                 </section>
-                <p><span class="important"><i class="fa-brands fa-git-alt"></i></span> Luego, debes <span
+<!--                 <p><span class="important"><i class="fa-brands fa-git-alt"></i></span> Luego, debes <span
                         class="importantGitHub">vincular</span> tu <span class="important">repositorio local</span> con
                     un <span class="importantGitHub">repositorio remoto</span> en Github utilizando el comando:</p>
                 <section class="code">
@@ -131,7 +145,7 @@
                     <article class="codeText">
                         <p id="texto">git remote add origin [URL del repositorio remoto]</p>
                     </article>
-                </section>
+                </section> -->
                 <h2 class="subtitle github">
                     Comandos paso a paso para subir o actualizar cambios en el repositorio remoto
                 </h2>
